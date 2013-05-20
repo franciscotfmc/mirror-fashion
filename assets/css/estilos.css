@@ -1,0 +1,28 @@
+header h1 {
+  height: 85px;
+  width: 225px;
+  background-image: url(../img/logo.png);
+
+  text-indent: -9999px;
+}
+
+body {
+  color: #333333;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.sacola {
+  background: url(../img/sacola.png) no-repeat top right;
+  font-size: 14px;
+  padding-right: 35px;
+  text-align: right;
+  width: 140px;
+}
+
+.menu-setores ul {
+  font-size: 15px;
+}
+
+.menu-setores a {
+  color: #003366;
+}
