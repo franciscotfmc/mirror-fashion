@@ -1,0 +1,1 @@
+alert("O parágrafo foi exibido? (arquivo js externo)");
