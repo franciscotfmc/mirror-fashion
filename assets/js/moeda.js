@@ -1,11 +1,12 @@
-var numero = 9.9;
-var formatado = numero.toFixed(2);
-formatado = "R$ " + formatado;
-formatado = formatado.replace(".", ",");
-console.log(formatado);
+function numberParaReal(numero) {
+  return formatado = "R$ " + numero.toFixed(2).replace(".", ",");  
+}
 
-var extraido = "R$ 120,00";
-var compativelComParseFloat = extraido.replace("R$ ", "");
-compativelComParseFloat = compativelComParseFloat.replace(",", ".");
-var valor = parseFloat(compativelComParseFloat);
-console.log(valor);
+function realParaNumber(extraido) {
+  return valor = parseFloat(extraido.replace("R$", "").replace(",", "."));
+}
+
+var formatado = numberParaReal(9.9);
+var numero = realParaNumber("R$ 40,00");
+console.log(formatado, numero);
+
