@@ -196,3 +196,28 @@ figcaption {
 .mais-produtos, .mais-produtos-vendidos{
   display: none;
 }
+
+.play {
+  margin: 5px;
+  border-left: 20px solid red;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  width: 0px;
+  position: absolute;
+}
+
+.pause {
+  margin: 5px;
+  border-left: 15px solid red;
+  border-right: 15px solid red;
+  width: 5px;
+  height: 30px;
+  position: absolute;
+  left: 30px;
+}
+
+.buttons {
+  position: relative;
+  display: inline;
+  margin: 30px;
+}
