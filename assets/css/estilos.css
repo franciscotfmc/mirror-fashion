@@ -291,3 +291,54 @@ figcaption {
   display: inline;
   margin: 30px;
 }
+
+.painel .mostra-mais {
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+  padding: 10px;
+
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.5);
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 0 1px black;
+  background: #333;
+
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.painel .mostra-mais:hover {
+  background: #393939;
+  box-shadow: 1px 0 20px rgba(200, 200, 120, 0.9);
+}
+
+.painel .mostra-mais:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+
+  border-top: 10px solid #333;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.painel .mostra-mais:hover:after {
+  border-top-color: #393939;
+}
