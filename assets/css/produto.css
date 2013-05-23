@@ -25,7 +25,6 @@
   color: #333;
   display: inline-block;
   font-size: 30px;
-  margin: 30px 0;
   padding: 15px 25px;
   text-decoration: none;
 }
@@ -33,4 +32,30 @@
 input[type=submit]:active {
   box-shadow: 0 1px 2px #111;
   top: 2px;
+}
+
+.cores a {
+  height: 70px;
+  width: 70px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+.cores .verde {
+  background-color: #33CC66;
+}
+
+.cores .rosa {
+  background-color: #FF6666;
+}
+
+.cores .azul {
+  background-color: #6666FF;
+}
+
+.cores {
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
