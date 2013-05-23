@@ -3,16 +3,106 @@
     
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="assets/css/sobre.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/estilos.css">
+        <link rel="stylesheet" href="assets/css/contato.css">
         <title>
             Mirror Fashion
         </title>
     </head>
     
     <body>
-        <h1>
-            Olá, sou o contato.html
-        </h1>
+        <header class="container">
+            <!--[if lt IE 9]>
+                <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+            <h1>
+                Mirror Fashion
+            </h1>
+            <p class="sacola">
+                Nenhum item na sacola de compras
+            </p>
+            <nav class="menu-setores">
+                <ul>
+                    <li>
+                        <a href="#">Sua Conta</a>
+                    </li>
+                    <li>
+                        <a href="#">Lista de Desejos</a>
+                    </li>
+                    <li>
+                        <a href="#">Cartão Fidelidade</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Ajuda</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="container contato">
+            <h2>Entre em contato com a Mirror Fashion</h2>
+
+            <form>
+                <label for="campo-nome">Nome</label>
+                <input name="name" id="campo-nome">
+
+                <label for="campo-email">Email</label>
+                <input name="email" type="email" id="campo-email">
+
+                <label for="campo-tel">Telefone</label>
+                <input name="tel" type="tel" id="campo-tel">
+
+                <label for="campo-cidade">Cidade</label>
+                <select name="cidade" id="campo-cidade">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option>Outras</option>
+                </select>
+
+                <label for="campo-mensagem">Mensagem</label>
+                <textarea name="mensagem" id="campo-mensagem"></textarea>
+
+                <fieldset>
+                    <legend>Opções de e-mail</legend>
+
+                    <label>
+                        <input type="checkbox" name="newsletter" value="receber" checked>
+                        Desejo receber a newsletter.
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="parceiros" value="receber">
+                        Desejo receber emails de parceiros.
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Enviar contato">
+            </form>
+        </section>
+     
+        <footer>
+            <div class="container">
+                <h1>
+                    Mirror Fashion
+                </h1>
+                <ul class="social">
+                    <li>
+                        <a href="http://facebook.com/mirrorfashion">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/mirrorfashion">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="http://plus.google.com/mirrorfashion">Google+</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        
     </body>
 
 </html>
