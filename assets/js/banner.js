@@ -1,17 +1,24 @@
+var seconds = 2000;
+id = setInterval(trocaBanner, seconds);
+
 var banners = ["assets/img/destaque-home.png", "assets/img/destaque-home-2.png"];
 var bannerAtual = 0;
+
+var controle = document.querySelector('.pause');
 
 function trocaBanner() {
   bannerAtual = (bannerAtual + 1) % 2;
   document.querySelector('.destaque img').src = banners[bannerAtual];
 }
 
-id = setInterval(trocaBanner, 2000);
+controle.onclick = function() {
+  if(this.className == 'pause') {
+    clearInterval(id);
+    controle.className = 'play';
+  } else {
+    timer = setInterval(trocaBanner(), seconds);
+    controle.className = 'pause';
+  }
 
-document.querySelector(".destaque img").addEventListener("mouseover", function(){
-  clearInterval(id);
-});
-
-document.querySelector(".destaque img").addEventListener("mouseout", function(){
-  id = setInterval(trocaBanner, 2000);
-});
+  return  false;
+}
