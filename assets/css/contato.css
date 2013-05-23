@@ -40,6 +40,24 @@ input[type=submit] {
   background: linear-gradient(#b1dd5c, #91bd3c);
 }
 
+input[type=submit]:active {
+  box-shadow: 0 1px 2px #111;
+  position: relative;
+  top: 2px;
+}
+
+input:focus, textarea:focus {
+  background: #ffffd3;
+}
+
 textarea, input[name=nome], input[name=email] {
   width: 380px;
+}
+
+label:after {
+  content: ':';
+}
+
+fieldset {
+  border: 1px dotted #777;
 }

@@ -167,11 +167,15 @@ figcaption {
 .novidades {
   float: left;
   background-color: #f5dcdc;
+  background: -webkit-linear-gradient(#f5dcdc, #f4bebe);
+  background: linear-gradient(#f5dcdc, #f4bebe);
 }
 
 .mais-vendidos {
   float: right;
   background-color: #dcdcf5;
+  background: -webkit-linear-gradient(#dcdcf5, #bebef4);
+  background: linear-gradient(#dcdcf5, #bebef4);
 }
 
 .painel li {
