@@ -6,9 +6,7 @@
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/estilos.css">
         <link rel="stylesheet" href="assets/css/produto.css">
-
-        <script type="text/javascript" src="assets/js/jquery.js"></script>
-        <script type="text/javascript" src="assets/js/produto.js"></script>
+        <link rel="stylesheet" href="assets/css/jquery-ui.css">
         <title>
             Mirror Fashion
         </title>
@@ -17,7 +15,8 @@
     <body>
         <header class="container">
             <!--[if lt IE 9]>
-                <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+                <script src="//html5shiv.googlecode.com/svn/trunk/html5.js">
+                </script>
             <![endif]-->
             <h1>
                 Mirror Fashion
@@ -45,24 +44,45 @@
                 </ul>
             </nav>
         </header>
-
         <div class="container produto">
             <img src="assets/img/produto-detalhe1.png" class="foto">
-            <h1>Fuzzy Cardigan</h1>
-            <h2>por apenas R$ 129</h2>
-
-            <h3>Escolha sua cor:</h3>
-            
+            <h1>
+                Fuzzy Cardigan
+            </h1>
+            <h2>
+                por apenas R$ 129
+            </h2>
+            <h3>
+                Escolha sua cor:
+            </h3>
             <p class="cores">
                 Cores disponíveis:
                 <a href="assets/img/produto-detalhe1.png" class="verde">verde</a>
-                <a href="assets/img/produto-detalhe2.png" class="rosa">rosa</a> e
+                <a href="assets/img/produto-detalhe2.png" class="rosa">rosa</a>
+                e
                 <a href="assets/img/produto-detalhe3.png" class="azul">azul</a>
             </p>
-
             <a href="#" class="comprar">Comprar</a>
         </div>
-    
+        <section class="detalhes container">
+            <ul>
+                <li>
+                    <a href="#tab-sobre">Sobre o produtos</a>
+                </li>
+                <li>
+                    <a href="#tab-dicas">Dicas</a>
+                </li>
+            </ul>
+            <p id="tab-sobre">
+                Esse é o melhor casaco de Cardigã que você já viu. Excelente material
+                italiano com estampa desenhada pelos artesãos da comunidade de Krotor nas
+                ilhas gregas. Compre já e receba hoje mesmo pela nossa entrega ajato.
+            </p>
+            <p id="tab-dicas">
+                O Fuzzy Cardigan é fantástico para a meia estação, quando o friozinho
+                começa a chegar. Seu estilo parisiense combina com o charme da estação.
+            </p>
+        </section>
         <footer>
             <div class="container">
                 <h1>
@@ -81,6 +101,9 @@
                 </ul>
             </div>
         </footer>
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="assets/js/produtos.js"></script>
     </body>
 
 </html>
